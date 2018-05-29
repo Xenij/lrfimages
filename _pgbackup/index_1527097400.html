@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="lrfimages" wp-site-theme-slug="lrfimages" wp-site-themes-folder="C:\Users\dalef\Desktop\lrfstuff\LRFimages">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400i,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://rawgithub.com/dinbror/blazy/master/blazy.min.js"></script>
+    </head>
+    <body>
+        <img class="logo" src="assets/logo/logo.png">
+        <div class="wrapper">
+            <aside class="side-content">
+                <img class="logo-mobile" src="assets/logo/logo.png">
+                <h2 class="spacer"> &nbsp;</h2>
+                <i id="toggle-btn" class="fa fa-chevron-down fa-lg" aria-label="menu-button" role="button" onclick="toggleMenu()"></i>
+                <nav id="nav-menu-js" class="nav-menu">
+                    <a href="index.html" class="nav-link" target="_parent">Home</a>
+                    <a href="about.html" class="nav-link" target="_parent">About</a>
+                    <a href="client.html" class="nav-link" target="_parent">Clients</a>
+                    <a href="contact.html" class="nav-link" target="_parent">Contact</a>
+                </nav>                 
+                <nav id="mobile-menu-js" class="mobile-menu" style="display: none;">
+                    <a href="index.html" class="nav-link" target="_parent">Home</a>
+                    <a href="about.html" class="nav-link" target="_parent">About</a>
+                    <a href="client.html" class="nav-link" target="_parent">Clients</a>
+                    <a href="contact.html" class="nav-link" target="_parent">Contact</a>
+                </nav>
+                <div id="categories-js" class="categories">
+                    <h2 class="category">Fashion</h2>
+                    <h2 class="category">Beauty</h2>
+                    <h2 class="category">Print</h2>
+                    <h2 class="category">Branding</h2>
+                    <h2 class="category">Digital</h2>
+                    <h2 class="category">Pattern</h2>
+                    <h2 class="category">Music</h2>
+                </div>
+            </aside>
+            <main class="main-content">
+                <section>
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/buckingham.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/hum.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/kylie.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Lunar/lunar3.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/kyliebw.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/gavin1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/gavin2.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Cheyanne1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Cheyanne2.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Hannah1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Hannah2.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Katherine1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Portraits/Kylie1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Lunar/lunar1.jpg" />
+                    <img src="http://placehold.it/500x250&text=placeholder" class="b-lazy" data-src="assets/images/Lunar/lunar4.jpg" />
+                </section>
+                <div class="lightbox">
+                    <div class="title"></div>
+                    <div class="filter"></div>
+                    <div class="arrowr"></div>
+                    <div class="arrowl"></div>
+                    <div class="close"></div>
+                </div>
+            </main>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- Lazy Loader Script-->
+        <script>
+        	var bLazy = new Blazy({
+ 			success: function(){
+    			updateCounter();
+  				}
+			});
+        </script>
+        <!-- Lightbox js -->
+        <script>
+            $(window).on('load', function() {
+
+  $("section img").click(function() {
+      if(window.innerWidth > 590){
+    $(".lightbox").fadeIn(300);
+    $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' />");
+    $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
+    /*$(".title").append("<h1>" + $(this).attr("alt") + "</h1>");*/
+    $("html").css("overflow", "hidden");
+    if ($(this).is(":last-child")) {
+      $(".arrowr").css("display", "none");
+      $(".arrowl").css("display", "block");
+    } else if ($(this).is(":first-child")) {
+      $(".arrowr").css("display", "block");
+      $(".arrowl").css("display", "none");
+    } else {
+      $(".arrowr").css("display", "block");
+      $(".arrowl").css("display", "block");
+    }}else{}
+      
+  });
+
+  $(".close").click(function() {
+    $(".lightbox").fadeOut(300);
+    $("h1").remove();
+    $(".lightbox img").remove();
+    $("html").css("overflow", "auto");
+  });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      $(".lightbox").fadeOut(300);
+      $(".lightbox img").remove();
+      $("html").css("overflow", "auto");
+    }
+  });
+
+  $(".arrowr").click(function() {
+    var imgSrc = $(".lightbox img").attr("src");
+    var search = $("section").find("img[src$='" + imgSrc + "']");
+    var newImage = search.next().attr("src");
+    /*$(".lightbox img").attr("src", search.next());*/
+    $(".lightbox img").attr("src", newImage);
+    $(".filter").css("background-image", "url(" + newImage + ")");
+
+    if (!search.next().is(":last-child")) {
+      $(".arrowl").css("display", "block");
+    } else {
+      $(".arrowr").css("display", "none");
+    }
+  });
+            
+  $(document).keyup(function(e) {
+       if (e.keyCode == 39) {
+   var imgSrc = $(".lightbox img").attr("src");
+    var search = $("section").find("img[src$='" + imgSrc + "']");
+    var newImage = search.next().attr("src");
+    /*$(".lightbox img").attr("src", search.next());*/
+    $(".lightbox img").attr("src", newImage);
+    $(".filter").css("background-image", "url(" + newImage + ")");
+
+    if (!search.next().is(":last-child")) {
+      $(".arrowl").css("display", "block");
+    } else {
+      $(".arrowr").css("display", "none");
+    }}
+  });
+
+  $(".arrowl").click(function() {
+    var imgSrc = $(".lightbox img").attr("src");
+    var search = $("section").find("img[src$='" + imgSrc + "']");
+    var newImage = search.prev().attr("src");
+    /*$(".lightbox img").attr("src", search.next());*/
+    $(".lightbox img").attr("src", newImage);
+    $(".filter").css("background-image", "url(" + newImage + ")");
+
+    if (!search.prev().is(":first-child")) {
+      $(".arrowr").css("display", "block");
+    } else {
+      $(".arrowl").css("display", "none");
+    }
+  });
+            
+  $(document).keyup(function(e) {
+    if (e.keyCode == 37) {
+      var imgSrc = $(".lightbox img").attr("src");
+    var search = $("section").find("img[src$='" + imgSrc + "']");
+    var newImage = search.prev().attr("src");
+    /*$(".lightbox img").attr("src", search.next());*/
+    $(".lightbox img").attr("src", newImage);
+    $(".filter").css("background-image", "url(" + newImage + ")");
+
+    if (!search.prev().is(":first-child")) {
+      $(".arrowr").css("display", "block");
+    } else {
+      $(".arrowl").css("display", "none");
+    }
+    }
+  });
+
+});
+        </script>
+        <script>
+        	//Toggle button
+	function toggleMenu() {
+ 		var navMenu = document.getElementById("mobile-menu-js");
+  		if (navMenu.style.height <= "10px") {
+    		navMenu.style.height = "160px";     
+  		} else {
+    		navMenu.style.height = "0px";                  
+  		}
+	};
+        </script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
