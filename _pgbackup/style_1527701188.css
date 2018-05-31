@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+h3 {
+    font-size: 5vh;
+    font-family: sans;
+}
+
+.row {
+    height: 100px;
+}
+
+h3 > span {
+    position: relative;
+    color: #000;
+}
+
+h3 > span:hover {
+    color: #000;
+}
+
+h3 > span:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    bottom: 0;
+    left: 5%;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h3 > span:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav {
+    font-size: 2vh;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.logo {
+    height: 150px;
+    margin-top: -5%;
+}
+
+.collections {
+    font-size: 5vh;
+    list-style-type: none;
+}
+
+.collections li:hover {
+    left: 15px;
+}
+
+section {
+    column-width: 300px;
+    column-gap: 5px;
+    padding: 5px;
+    padding-right: 10%;
+}
+
+section img {
+    width: 100%;
+    cursor: pointer;
+}

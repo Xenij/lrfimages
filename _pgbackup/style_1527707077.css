@@ -3,6 +3,10 @@ body {
     width: 100%;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 h3 {
     font-size: 5vh;
     font-family: sans;
@@ -24,10 +28,10 @@ h3 > span:hover {
 h3 > span:before {
     content: "";
     position: absolute;
-    width: 85%;
-    height: 3px;
+    width: 90%;
+    height: 2px;
     bottom: 0;
-    left: 7%;
+    left: 5%;
     background-color: #000;
     visibility: hidden;
     -webkit-transform: scaleX(0);
@@ -64,19 +68,19 @@ h3 > span:hover:before {
 
 .main-iso .item {
     width: 300px;
-    float: right;
+    float: left;
+    margin-bottom: 20px;
 }
 
 .image {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    padding: 0px;
 }
 
-@media (max-width: 1264px) {
+@media (max-width: 1037px) {
     .main-iso .item {
-        width: 50%;
+        width: 300px;
         height: 300px;
     }
 
@@ -84,57 +88,4 @@ h3 > span:hover:before {
         width: 100%;
         object-fit: cover;
     }
-}
-
-@media (max-width: 900px) {
-    .main-iso .item {
-        width: 100%;
-        height: 300px;
-    }
-
-    .image {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .collections {
-        margin-left: -50px;
-    }
-}
-
-.active {
-    background: #cecece;
-}
-
-.photo-item span {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-}
-
-.photo-item span p {
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 35%;
-}
-
-.photo-item:hover span {
-    display: block;
-}
-
-hr {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 2px solid #fff;
-    margin: 1em 0;
-    padding: 0;
 }
