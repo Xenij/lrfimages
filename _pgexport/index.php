@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="lrf1.0" wp-site-theme-slug="lrf1" wp-site-themes-folder="C:\Users\dalef\Desktop\lrfstuff\LRFimages1.0">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Blank Template for Bootstrap</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    </head>
-    <body>
+<?php
+get_header(); ?>
+
         <header style="position: fixed;
     top: 0;
     background-color: #ffffff !important;
@@ -26,19 +11,19 @@
 </div>
                 <div class="nav col-md col-lg col-xl col-sm">
                     <a href="about.html" target="_parent" style="color: #000000 !important;
-    text-decoration: none !important;"> About</a>
+    text-decoration: none !important;"> <?php _e( 'About', 'lrf1' ); ?></a>
                 </div>
                 <div class="nav col-lg col-md col-xl col-sm">
                     <a href="#" target="_parent" style="color: #000000 !important;
-    text-decoration: none;"> Contact</a>
+    text-decoration: none;"> <?php _e( 'Contact', 'lrf1' ); ?></a>
                 </div>
                 <div class="nav col-lg col-md col-xl col-sm">
                     <a href="#" target="_parent" style="color: #000000 !important;
-    text-decoration: none;"> Clients</a>
+    text-decoration: none;"> <?php _e( 'Clients', 'lrf1' ); ?></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xl-3 col-sm-3">
                     <a href="index.html" target="_parent">
-                        <img class="logo" src="assets/logo/logo.png">
+                        <img class="logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/logo.png">
                     </a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2">
@@ -58,19 +43,19 @@
                     <div class="iso-nav">
                         <ul class="collections">
                             <li data-filter=".animal">
-                                <h3> <span class="col">Animals</span> </h3>
+                                <h3> <span class="col"><?php _e( 'Animals', 'lrf1' ); ?></span> </h3>
                             </li>
                             <li data-filter=".portrait">
-                                <h3> <span class="col">Portraits</span> </h3>
+                                <h3> <span class="col"><?php _e( 'Portraits', 'lrf1' ); ?></span> </h3>
                             </li>
                             <li data-filter=".branding">
-                                <h3> <span class="col">Branding</span> </h3>
+                                <h3> <span class="col"><?php _e( 'Branding', 'lrf1' ); ?></span> </h3>
                             </li>
                             <li data-filter=".fashion">
-                                <h3> <span class="col">Fashion</span> </h3>
+                                <h3> <span class="col"><?php _e( 'Fashion', 'lrf1' ); ?></span> </h3>
                             </li>
                             <li data-filter=".fineart">
-                                <h3> <span class="col">Fine Arts</span> </h3>
+                                <h3> <span class="col"><?php _e( 'Fine Arts', 'lrf1' ); ?></span> </h3>
                             </li>
                         </ul>
                     </div>
@@ -81,82 +66,51 @@
                     <div class="main-iso">
                         <div class="item animal photo-item">
                             <img class="image" src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&h=350" alt="">
-                            <span> <p>Animals<br><hr>Tiger</p> </span>
+                            <span> <p><?php _e( 'Animals', 'lrf1' ); ?><br><hr><?php _e( 'Tiger', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item portrait photo-item">
                             <img class="image" src="https://assets.vogue.com/photos/59726f1974b72106b2ef2a5d/master/pass/00-lede-prince-george-4th-birthday-portrait.jpg" alt="">
-                            <span> <p>Portraits<br><hr>Boy</p> </span>
+                            <span> <p><?php _e( 'Portraits', 'lrf1' ); ?><br><hr><?php _e( 'Boy', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item branding photo-item">
                             <img class="image" src="http://www.infinity-intellectual.com/wp-content/uploads/2015/07/Branding-1200x721.jpg" alt="">
-                            <span> <p>Branding<br><hr>Words</p> </span>
+                            <span> <p><?php _e( 'Branding', 'lrf1' ); ?><br><hr><?php _e( 'Words', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item animal photo-item">
                             <img class="image" src="http://r.ddmcdn.com/s_f/o_1/cx_297/cy_0/cw_1201/ch_1201/w_720/APL/uploads/2014/08/wild-animal-safari-zebra-5371037.jpg" alt="">
-                            <span> <p>Animals<br><hr>Zebra</p> </span>
+                            <span> <p><?php _e( 'Animals', 'lrf1' ); ?><br><hr><?php _e( 'Zebra', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item animal photo-item">
                             <img class="image" src="https://s.hswstatic.com/gif/animal-stereotype-orig.jpg" alt="">
-                            <span> <p>Animals<br><hr>Dog</p> </span>
+                            <span> <p><?php _e( 'Animals', 'lrf1' ); ?><br><hr><?php _e( 'Dog', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item animal photo-item">
                             <img class="image" src="https://static.boredpanda.com/blog/wp-content/uploads/2017/01/funny-animal-selfies-4-587deb35425b9__605.jpg" alt="">
-                            <span> <p>Animals<br><hr>Gang</p> </span>
+                            <span> <p><?php _e( 'Animals', 'lrf1' ); ?><br><hr><?php _e( 'Gang', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item portrait photo-item">
                             <img class="image" src="http://rankin.co.uk/media/6284-2-046_f9-copy-324x420.jpg" alt="">
-                            <span> <p>Portraits<br><hr>Thought</p> </span>
+                            <span> <p><?php _e( 'Portraits', 'lrf1' ); ?><br><hr><?php _e( 'Thought', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item branding photo-item">
                             <img class="image" src="https://themmit.com/wp-content/uploads/2018/01/BrandingPortfolio.jpg" alt="">
-                            <span> <p>Branding<br><hr>Light Bulb</p> </span>
+                            <span> <p><?php _e( 'Branding', 'lrf1' ); ?><br><hr><?php _e( 'Light Bulb', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item fashion photo-item">
                             <img class="image" src="https://media.gq.com/photos/597a3d6c0dfbaf62dc47e0ca/master/pass/Milo%20Ventimiglia-0717-GQ-FAMV08-01-alt.jpg" alt="">
-                            <span> <p>Fashion<br><hr>Man</p> </span>
+                            <span> <p><?php _e( 'Fashion', 'lrf1' ); ?><br><hr><?php _e( 'Man', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item fineart photo-item">
                             <img class="image" src="https://cdn.shopify.com/s/files/1/1109/5626/products/Free-Bird_1024x1024.jpg?v=1479506125" alt="">
-                            <span> <p>Fine Art<br><hr>Bird</p> </span>
+                            <span> <p><?php _e( 'Fine Art', 'lrf1' ); ?><br><hr><?php _e( 'Bird', 'lrf1' ); ?></p> </span>
                         </div>
                         <div class="item fashion photo-item">
                             <img class="image" src="https://media.allure.com/photos/58e27bf882145034c5ad10a8/1:1/w_767/fashionnova.jpg" alt="">
-                            <span> <p>Fashion<br><hr>Womens Style</p> </span>
+                            <span> <p><?php _e( 'Fashion', 'lrf1' ); ?><br><hr><?php _e( 'Womens Style', 'lrf1' ); ?></p> </span>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script>
-        $('.main-iso').isotope({
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
+        </main>        
 
-$(".main-iso").isotope({
-    itemSelector: ".grid-item",
-    masonry: {
-      columnWidth: 100
-    }
-  });
-
-$('.iso-nav ul li').click(function(){
-  $('.iso-nav ul li').removeClass('active');
-  $(this).addClass('active');
-  
-  var selector = $(this).attr('data-filter');
-  $('.main-iso').isotope({
-    filter: selector 
-  });
-  return false;
-});
-        </script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    </body>
-</html>
+<?php get_footer(); ?>

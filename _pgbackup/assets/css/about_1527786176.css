@@ -1,0 +1,130 @@
+/* square== clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+*/
+.fold {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+}
+
+div.fold div.parallelogram {
+    width: 40vw;
+    height: 100%;
+    padding: 0 0.5%;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.parallelogram.parallelogram-1 {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+div.parallelogram.parallelogram-2 {
+    z-index: 0;
+    margin-left: 30vw;
+    animation-duration: 0.5s;
+    animation-delay: 0.75s;
+    transition: margin-left 0.3s;
+}
+
+div.parallelogram.paraSlideLeft.animated {
+    margin-left: 0;
+    transition: margin 1s;
+}
+
+div.parallelogram.parallelogram-3 {
+    margin-left: 60vw;
+    z-index: 0;
+    animation-duration: 0.5s;
+    animation-delay: 1.25s;
+    transition: margin-left 0.6s;
+}
+
+.photo.photo1 {
+    background: url(https://images.unsplash.com/photo-1516913840875-366de3e463bd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be881d954f17c51a868fa0d2e0a5b707&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+}
+
+.photo.photo2 {
+    background: url(https://images.unsplash.com/photo-1469303139927-be9518d4e33f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9698444a4489f00b028c4bdee41b1f67&auto=format&fit=crop&w=700&q=80);
+    background-position: center;
+}
+
+.photo.photo3 {
+    background: url(https://images.unsplash.com/photo-1505250826514-1e17795804a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e04cdb9959066aed43896954e46bcc9&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+}
+
+div.photo {
+    background-position: center;
+    width: 100%;
+    height: 90%;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transition-timing-function: ease-out;
+    background-repeat: no-repeat;
+}
+
+div.photo:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 100;
+}
+
+.parallelogram {
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+/* Animations */
+.parallelogram.hideImg {
+    animation-name: hide;
+    animation-duration: 0.1s;
+}
+
+.parallelogram.showImg {
+    animation-name: show;
+    animation-duration: 0.3s;
+}
+
+.paraSlideLeft {
+    animation: slideLeft 0.5s 1;
+    animation-delay: 1s;
+    margin-left: 0;
+}
+
+.paraSlideToDefault2 {
+    animation: slidePos2 0.5s 1;
+    animation-delay: 1s;
+    margin-left: 0;
+}
+
+@keyframes slideLeft {
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes slidePos2 {
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes hide {
+    100% {
+        opacity: 0;
+    }
+}
+
+/*
+@keyframes show{
+  0%{
+      opacity:0;
+  }
+  100%{
+    opacity:1.0;
+  }
+}*/

@@ -109,11 +109,8 @@ h3 > span:hover:before {
     }
 
     .collections {
-        margin-left: -40px;
-    }
-
-    h3 {
-        font-size: 4vh !important;
+        margin-left: -50px;
+        font-size: 4vh;
     }
 }
 

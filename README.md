@@ -1,2 +1,0 @@
-# lrfimages
-Photography Website
