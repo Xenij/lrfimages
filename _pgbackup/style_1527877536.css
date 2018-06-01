@@ -123,11 +123,9 @@ h3 > span:hover:before {
 
 .photo-item span {
     display: block;
-    height: calc(100% - 40px);
-    width: calc(100% - 40px);
-    top: 20px;
     position: absolute;
-    left: 20px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
@@ -140,7 +138,7 @@ h3 > span:hover:before {
     display: block;
     width: 100px;
     margin: 0 auto;
-    margin-top: 25%;
+    margin-top: 35%;
 }
 
 .photo-item:hover span {
@@ -154,7 +152,4 @@ hr {
     border-top: 2px solid #fff;
     margin: 1em 0;
     padding: 0;
-}
-
-.zebra {
 }
