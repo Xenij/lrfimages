@@ -14,8 +14,6 @@ body {
     overflow: hidden;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
-    border: 2px solid black;
 }
 
 .gallery-images {
@@ -32,12 +30,11 @@ body {
 }
 
 .gallery-item img {
-    transition: all .2s ease-in-out;
     width: 300px;
     height: 200px;
     padding: 0;
     margin: 10px 0;
-    border: 2px solid #000;
+    border: 1px solid #aaa;
     cursor: pointer;
 }
 
@@ -76,23 +73,13 @@ body {
 }
 
 .gallery #ind-2:checked ~ .gallery-images {
-    left: -260px;
+    left: -310px;
 }
 
 .gallery #ind-3:checked ~ .gallery-images {
-    left: -520px;
+    left: -620px;
 }
 
 .gallery #ind-4:checked ~ .gallery-images {
-    left: -780px;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.6);
-    border: none;
-}
-
-.port {
-    width: 200px !important;
-    height: 200px !important;
+    left: -920px;
 }

@@ -76,23 +76,18 @@ body {
 }
 
 .gallery #ind-2:checked ~ .gallery-images {
-    left: -260px;
+    left: -310px;
 }
 
 .gallery #ind-3:checked ~ .gallery-images {
-    left: -520px;
+    left: -620px;
 }
 
 .gallery #ind-4:checked ~ .gallery-images {
-    left: -780px;
+    left: -920px;
 }
 
 .gallery-item img:hover {
     transform: scale(1.6);
     border: none;
-}
-
-.port {
-    width: 200px !important;
-    height: 200px !important;
 }
