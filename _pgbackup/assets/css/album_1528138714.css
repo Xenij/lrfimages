@@ -102,11 +102,7 @@ body {
 }
 
 .slides {
+    padding-left: 25px;
     width: 200px;
-    height: 100px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: black !important;
+    padding-right: 25px;
 }

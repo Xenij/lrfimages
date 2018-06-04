@@ -65,7 +65,7 @@ h3 > span:hover:before {
 }
 
 .collections {
-    font-size: 4vw;
+    font-size: 5vh;
     list-style-type: none;
     margin-left: -40px;
 }

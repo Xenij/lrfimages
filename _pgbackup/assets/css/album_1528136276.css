@@ -98,15 +98,23 @@ body {
 }
 
 .scroll {
-    overflow: hidden;
+    background: white;
+    height: 150px;
+    width: 60%;
+    margin: 20px auto;
+    padding-left: 6%;
 }
 
-.slides {
-    width: 200px;
+.scroll .album {
+    width: 100px;
     height: 100px;
+    float: left;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    margin-top: 25px;
+    margin-left: 2%;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: black !important;
+.arrow {
 }

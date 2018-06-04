@@ -96,17 +96,3 @@ body {
     width: 200px !important;
     height: 200px !important;
 }
-
-.scroll {
-    overflow: hidden;
-}
-
-.slides {
-    width: 200px;
-    height: 100px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: black !important;
-}

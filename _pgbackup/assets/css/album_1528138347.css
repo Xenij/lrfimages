@@ -101,12 +101,14 @@ body {
     overflow: hidden;
 }
 
-.slides {
-    width: 200px;
+.album {
+    position: relative;
+    width: 100px;
     height: 100px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: black !important;
+    float: left;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    margin-left: 22px;
+    margin-right: 34px;
 }
