@@ -45,12 +45,10 @@
                 <div class="col-lg-3 col-md-3 col-xl-3 col col-sm d-md-table d-lg-table d-xl-table d-sm-none d-none" style="left: -9%;
     top: 3%;">
 </div>
-                <div class="col-lg-3 col-md-3 col-xl-3 d-table d-sm-table col col-sm d-md-none d-lg-none d-xl-none" style="width: 66%;
-    height: 100px;
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 5px;">
-</div>
+                <div class="col-lg-3 col-md-3 col-xl-3 d-table d-sm-table col col-sm d-md-none d-lg-none d-xl-none" style="left: -9%;
+    top: 3%;">
+                    <i class="m-icon fa fa-bars" aria-hidden="true"></i>
+                </div>
                 <div class="mobile d-table d-sm-table d-md-none d-lg-none d-xl-none col-sm-3 col-3">
                     <div>
                         <a href="index.html" target="_parent">
@@ -59,54 +57,16 @@
                     </div>
                     <div style="margin-top: -13%;
     width: 100%;">
-                        <i class="fa fa-angle-down faa-icon" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-xl-2 d-table d-sm-table d-xl-table d-md-table d-lg-table col-sm col" style="width: 100%;
-    height: 100px;">
+                <div class="col-lg-2 col-md-2 col-xl-2 d-table d-sm-table d-xl-table d-md-table d-lg-table col-sm col">
 </div>
             </div>
         </header>
-        <div class="menu-collapsed d-md-none d-lg-none d-xl-none">
-            <div class="bar"></div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Bio</a>
-                    </li>
-                    <li>
-                        <a href="#">Message Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <main style="height: 100%;
     padding-top: 100px;
     width: 100%;">
-            <div class="m-coll" style="height: 0px;">
-                <div class="iso-nav">
-                    <ul class="collections">
-                        <li data-filter=".animal">
-                            <h3> <span class="col">Animals</span> </h3>
-                        </li>
-                        <li data-filter=".portrait">
-                            <h3> <span class="col">Portraits</span> </h3>
-                        </li>
-                        <li data-filter=".branding">
-                            <h3> <span class="col">Branding</span> </h3>
-                        </li>
-                        <li data-filter=".fashion">
-                            <h3> <span class="col">Fashion</span> </h3>
-                        </li>
-                        <li data-filter=".fineart">
-                            <h3> <span class="col">Fine Arts</span> </h3>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="row" style="width: 100%;
     height: 100%;
     float: left;">
@@ -200,23 +160,6 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script>
-        	$(".faa-icon").click(function (){
-    	if ($(".m-coll").height() == 0) {
-           $(".m-coll").animate(
-               {height: "300px", color:"black"});
-           }
-        else if ($(".m-coll").height() == 300) {
-           $(".m-coll").animate({height: "0px", color:"white"});
-           }
-        });
-        
-        </script>
-        <script>
-        		$(".menu-collapsed").click(function() {
- 					$(this).toggleClass("menu-expanded");
-				});
-        </script>
         <script>	
             $('#main').isotope({
   				itemSelector: '.item',

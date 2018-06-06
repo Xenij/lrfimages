@@ -1,0 +1,120 @@
+/*
+Theme Name: lrf1.0
+Theme URI: http://example.com
+Author: Your name
+Author URI: http://pinegrow.com/
+Description: This theme was created with Pinegrow Web Editor.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lrf1
+*/
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 5vh;
+    font-family: sans;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.row {
+    height: 100px;
+}
+
+h3 > span {
+    position: relative;
+    color: #000;
+}
+
+h3 > span:hover {
+    color: #000;
+}
+
+h3 > span:before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    bottom: 0;
+    left: 7%;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h3 > span:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.logo {
+    height: 150px;
+    margin-top: -5%;
+    margin-left: -10%;
+}
+
+.collections {
+    font-size: 4vw;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.collections li:hover {
+    left: 15px;
+}
+
+.main-iso .item {
+    width: 300px;
+    float: right;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.active {
+    background: #cecece;
+}
+
+.port {
+    height: 400px !important;
+}
+
+.mfp-bottom-bar {
+    display: none !important;
+}
+
+.mfp-bg {
+    cursor: pointer !important;
+    background: hsla(0, 0%, 0%, 1) !important;
+}
+
+.mfp-close {
+    margin-top: -5vh !important;
+    margin-right: -5vh !important;
+    color: white !important;
+}
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: auto !important;
+}
