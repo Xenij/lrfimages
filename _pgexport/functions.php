@@ -116,13 +116,7 @@ if ( ! function_exists( 'lrf1_enqueue_scripts' ) ) :
         /* Pinegrow generated Enqueue Scripts Begin */
 
     wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, null, false);
-
-    wp_deregister_script( 'jqueryui' );
-    wp_enqueue_script( 'jqueryui', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', false, null, false);
-
-    wp_deregister_script( 'isotopepkgd' );
-    wp_enqueue_script( 'isotopepkgd', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js', false, null, false);
+    wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', false, null, false);
 
     wp_deregister_script( 'popper' );
     wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
@@ -133,6 +127,15 @@ if ( ! function_exists( 'lrf1_enqueue_scripts' ) ) :
     wp_deregister_script( 'ieviewportbugworkaround' );
     wp_enqueue_script( 'ieviewportbugworkaround', get_template_directory_uri() . '/assets/js/ie10-viewport-bug-workaround.js', false, null, true);
 
+    wp_deregister_script( 'jquery' );
+    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, null, false);
+
+    wp_deregister_script( 'isotopepkgd' );
+    wp_enqueue_script( 'isotopepkgd', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js', false, null, false);
+
+    wp_deregister_script( 'jqueryfancybox' );
+    wp_enqueue_script( 'jqueryfancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js', false, null, false);
+
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
@@ -142,6 +145,18 @@ if ( ! function_exists( 'lrf1_enqueue_scripts' ) ) :
 
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
+
+    wp_deregister_style( 'contact' );
+    wp_enqueue_style( 'contact', get_template_directory_uri() . '/assets/css/contact.css', false, null, 'all');
+
+    wp_deregister_style( 'search' );
+    wp_enqueue_style( 'search', get_template_directory_uri() . '/assets/css/search.css', false, null, 'all');
+
+    wp_deregister_style( 'fontawesome' );
+    wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false, null, 'all');
+
+    wp_deregister_style( 'jqueryfancybox' );
+    wp_enqueue_style( 'jqueryfancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 

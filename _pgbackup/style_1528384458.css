@@ -15,7 +15,7 @@ body {
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 5vh;
     font-family: sans;
 }
 
@@ -122,10 +122,6 @@ h3 > span:hover:before {
         float: left;
     }
 
-    h3 {
-        font-size: 3vh;
-    }
-
     .pix {
         margin-left: 3%;
     }
@@ -135,10 +131,6 @@ h3 > span:hover:before {
     .main-iso .item {
         width: 50%;
         float: left;
-    }
-
-    h3 {
-        font-size: 3vh;
     }
 
     .pix {
@@ -152,7 +144,6 @@ h3 > span:hover:before {
 
 .m-logo {
     height: 100px;
-    margin-bottom: -15px;
 }
 
 .faa-icon {
@@ -198,12 +189,12 @@ h3 > span:hover:before {
 .menu-collapsed {
     transition: all .25s;
     position: fixed;
+    top: 10px;
     left: 9px;
     height: 36px;
     width: 36px;
     z-index: 1;
     cursor: pointer;
-    top: 10px;
 }
 
 .menu-collapsed ul {
@@ -215,7 +206,7 @@ h3 > span:hover:before {
 .bar {
     position: fixed;
     left: 12px;
-    top: 5%;
+    top: 24px;
 }
 
 .bar:before {
@@ -289,13 +280,4 @@ i {
 }
 
 .colm {
-    color: white;
-}
-
-.m-coll {
-    width: 100%;
-    background: white;
-    position: fixed;
-    z-index: 0;
-    text-align: center;
 }
