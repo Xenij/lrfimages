@@ -17,6 +17,14 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+		<script>
+		window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#LRF';
+        window.location.reload();
+    }
+}
+		</script>
     </head>
     <body>
         <header style="position: fixed;
